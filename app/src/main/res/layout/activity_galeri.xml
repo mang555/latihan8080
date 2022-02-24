@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaleriActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="188dp">
+
+               <ViewFlipper
+                   android:id="@+id/viewflipper"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/header"/>
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/karto"/>
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/yess"/>
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/xina"/>
+               </ViewFlipper>
+           </RelativeLayout>
+
+           <GridLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/mainGrid"
+               android:alignmentMode="alignMargins"
+               android:columnCount="1"
+               android:layout_gravity="center_horizontal"
+               android:columnOrderPreserved="false">
+
+               <!--                            PEMBUKA MENU1-->
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:onClick="albumhutri"
+                   android:layout_rowWeight="1"
+                   android:layout_columnWeight="1"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginTop="3dp"
+                   android:layout_marginRight="12dp"
+                   android:layout_marginBottom="12dp"
+                   app:cardCornerRadius="8dp"
+                   app:cardElevation="8dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_margin="10dp"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="10dp"
+                           android:src="@drawable/tujuhenam">
+                       </ImageView>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="50dp"
+                           android:text="ALBUM HUT RI">
+
+                       </TextView>
+
+                   </LinearLayout>
+
+
+               </androidx.cardview.widget.CardView>
+               <!--                            PEMBUKA MENU2-->
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:onClick="albumpramuka"
+                   android:layout_rowWeight="1"
+                   android:layout_columnWeight="1"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginTop="3dp"
+                   android:layout_marginRight="12dp"
+                   android:layout_marginBottom="12dp"
+                   app:cardCornerRadius="8dp"
+                   app:cardElevation="8dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_margin="10dp"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="10dp"
+                           android:src="@drawable/kembaran">
+                       </ImageView>
+
+                       <TextView
+                           android:layout_width="115dp"
+                           android:layout_height="9dp"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="50dp"
+                           android:text="ALBUM KEGIATAN PRAMUKA">
+
+                       </TextView>
+
+                   </LinearLayout>
+
+
+               </androidx.cardview.widget.CardView>
+               <!--                            PEMBUKA MENU 3-->
+               <androidx.cardview.widget.CardView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:onClick="albumpmr"
+                   android:layout_rowWeight="1"
+                   android:layout_columnWeight="1"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginTop="3dp"
+                   android:layout_marginRight="12dp"
+                   android:layout_marginBottom="12dp"
+                   app:cardCornerRadius="8dp"
+                   app:cardElevation="8dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_margin="10dp"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="10dp"
+                           android:src="@drawable/praja">
+                       </ImageView>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginLeft="50dp"
+                           android:text="ORGANISASI OSIS">
+
+                       </TextView>
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+               <!--                            PEMBUKA MENU 4-->
+
+
+
+           </GridLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+
+</LinearLayout>

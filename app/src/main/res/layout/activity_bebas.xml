@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BebasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/karto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/guru">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/guru"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="guru"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/galeri"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="galeri"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/perpus"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="perpus"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/profil"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="profil"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ekstrakulikuler"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="extrakulikuler"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fasilitas"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fasilitas"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
